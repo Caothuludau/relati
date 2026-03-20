@@ -16,9 +16,9 @@ import com.winston.relati.backend.application.relationship.CreateRelationshipSer
         .RelationshipTypeOnlyConstraintViolatedException;
 import com.winston.relati.backend.application.relationship.CreateRelationshipService
         .ReverseRelationshipOnlyConstraintViolatedException;
-import com.winston.relati.backend.domain.profile.Profile;
-import com.winston.relati.backend.domain.relationship.Relationship;
-import com.winston.relati.backend.domain.relationship.RelationshipType;
+import com.winston.relati.backend.domain.model.profile.Profile;
+import com.winston.relati.backend.domain.model.relationship.Relationship;
+import com.winston.relati.backend.domain.model.relationship.RelationshipType;
 import com.winston.relati.backend.infrastructure.persistence.profile.ProfileRepository;
 import com.winston.relati.backend.infrastructure.persistence.relationship.RelationshipRepository;
 import com.winston.relati.backend.infrastructure.persistence.relationship.RelationshipTypeRepository;

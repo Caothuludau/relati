@@ -12,7 +12,7 @@ import com.winston.relati.backend.application.profile.CreateProfileService.Creat
 import com.winston.relati.backend.application.profile.CreateProfileService.IncompleteAddressException;
 import com.winston.relati.backend.application.profile.CreateProfileService.ProvinceNotFoundException;
 import com.winston.relati.backend.application.profile.CreateProfileService.WardNotFoundException;
-import com.winston.relati.backend.domain.profile.Profile;
+import com.winston.relati.backend.domain.model.profile.Profile;
 import com.winston.relati.backend.infrastructure.persistence.profile.AddressRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.LocationRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.ProfileRepository;
@@ -20,7 +20,7 @@ import com.winston.relati.backend.infrastructure.persistence.reference.ProvinceR
 import com.winston.relati.backend.infrastructure.persistence.reference.WardRepository;
 import java.util.EnumMap;
 import java.util.Map;
-import java.util.Optional;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

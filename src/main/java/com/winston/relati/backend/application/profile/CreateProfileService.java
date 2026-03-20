@@ -1,8 +1,8 @@
 package com.winston.relati.backend.application.profile;
 
-import com.winston.relati.backend.domain.profile.Address;
-import com.winston.relati.backend.domain.profile.Location;
-import com.winston.relati.backend.domain.profile.Profile;
+import com.winston.relati.backend.domain.model.profile.Address;
+import com.winston.relati.backend.domain.model.profile.Location;
+import com.winston.relati.backend.domain.model.profile.Profile;
 import com.winston.relati.backend.infrastructure.persistence.profile.AddressRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.LocationRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.ProfileRepository;

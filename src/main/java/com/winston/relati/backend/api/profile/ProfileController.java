@@ -14,16 +14,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/profiles")
+@RequiredArgsConstructor
 public class ProfileController {
 
     private final CreateProfileService createProfileService;
-
-    public ProfileController(CreateProfileService createProfileService) {
-        this.createProfileService = createProfileService;
-    }
 
     @PostMapping
     public ResponseEntity<CreateProfileResponse> createProfile(
