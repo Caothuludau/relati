@@ -9,21 +9,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "def_provinces")
+@Table(name = "def_administrative_units")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Province {
+public class AdministrativeUnit {
 
     @Id
-    @Column(name = "code")
-    private String provinceCode;
-
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "name_en")
-    private String nameEn;
+    @Column(name = "id")
+    private Integer id;
 
     @Column(name = "full_name")
     private String fullName;
@@ -31,9 +25,16 @@ public class Province {
     @Column(name = "full_name_en")
     private String fullNameEn;
 
+    @Column(name = "short_name")
+    private String shortName;
+
+    @Column(name = "short_name_en")
+    private String shortNameEn;
+
     @Column(name = "code_name")
     private String codeName;
 
-    @Column(name = "administrative_unit_id")
-    private Integer administrativeUnitId;
+    @Column(name = "code_name_en")
+    private String codeNameEn;
 }
+

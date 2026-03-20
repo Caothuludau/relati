@@ -1,4 +1,4 @@
-package com.winston.relati.backend.domain.relationship;
+package com.winston.relati.backend.domain.model.relationship;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

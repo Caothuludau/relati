@@ -13,6 +13,7 @@ import com.winston.relati.backend.application.profile.CreateProfileService.Incom
 import com.winston.relati.backend.application.profile.CreateProfileService.ProvinceNotFoundException;
 import com.winston.relati.backend.application.profile.CreateProfileService.WardNotFoundException;
 import com.winston.relati.backend.domain.model.profile.Profile;
+import com.winston.relati.backend.domain.model.profile.Location;
 import com.winston.relati.backend.infrastructure.persistence.profile.AddressRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.LocationRepository;
 import com.winston.relati.backend.infrastructure.persistence.profile.ProfileRepository;
@@ -68,6 +69,9 @@ class CreateProfileServiceTest {
         Profile savedProfile = new Profile();
         savedProfile.setIndividualId(1L);
         when(profileRepository.save(any(Profile.class))).thenReturn(savedProfile);
+        Location savedLocation = new Location();
+        savedLocation.setLocationId(10L);
+        when(locationRepository.save(any(Location.class))).thenReturn(savedLocation);
         when(provinceRepository.existsByProvinceCode("01")).thenReturn(true);
         when(wardRepository.existsByWardCodeAndProvinceCode("001", "01")).thenReturn(true);
 

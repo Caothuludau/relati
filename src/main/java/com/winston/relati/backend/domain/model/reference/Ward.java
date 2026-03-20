@@ -1,4 +1,4 @@
-package com.winston.relati.backend.domain.reference;
+package com.winston.relati.backend.domain.model.reference;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -16,12 +16,27 @@ import lombok.Setter;
 public class Ward {
 
     @Id
-    @Column(name = "ward_code")
+    @Column(name = "code")
     private String wardCode;
 
     @Column(name = "province_code")
     private String provinceCode;
 
-    @Column(name = "ward_name")
-    private String wardName;
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "name_en")
+    private String nameEn;
+
+    @Column(name = "full_name")
+    private String fullName;
+
+    @Column(name = "full_name_en")
+    private String fullNameEn;
+
+    @Column(name = "code_name")
+    private String codeName;
+
+    @Column(name = "administrative_unit_id")
+    private Integer administrativeUnitId;
 }
